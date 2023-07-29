@@ -12,7 +12,7 @@ const router=require("./routes/router")
 
 app.use(express.json());
 app.use(cookieParser(""));
-app.use(cors());
+app.use(cors({credentials:true, origin:'https://client-frontend-s26f.onrender.com/'}));
 app.use(router); 
 
 const port = 8005;
